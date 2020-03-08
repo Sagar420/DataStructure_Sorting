@@ -22,8 +22,8 @@ namespace Sorting
 					Console.Write(",");
 				}
 			}
-			Console.WriteLine("\n\nSelect Sorrting Technique:- \n" +
-							  " 1: Bubble Sort \t 2: Selection Sort");
+			Console.WriteLine("\n\nSelect Sorting Technique:- \n" +
+							  " 1: Bubble Sort \t 2: Selection Sort \t 3:Insertion Sort");
 			int ch = Convert.ToInt32(Console.ReadLine());
 			switch (ch)
 			{
@@ -33,6 +33,9 @@ namespace Sorting
 				case 2:
 					SelectionSort.Fun_SelectionSort(a);
 				break;
+				case 3:
+					InsertionSort.Fun_InsertionSort(a);
+					break;
 				default:
 					Console.WriteLine("\n\nSelect Proper Choice");
 					break;
