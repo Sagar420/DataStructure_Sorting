@@ -23,7 +23,7 @@ namespace Sorting
 				}
 			}
 			Console.WriteLine("\n\nSelect Sorting Technique:- \n" +
-							  " 1: Bubble Sort \t 2: Selection Sort \t 3:Insertion Sort \t 4:MergeSort");
+							  " 1: Bubble Sort \t 2: Selection Sort \t 3:Insertion Sort \t 4:MergeSort \t 5:QuickSort");
 			int ch = Convert.ToInt32(Console.ReadLine());
 			switch (ch)
 			{
@@ -38,6 +38,9 @@ namespace Sorting
 					break;
 				case 4:
 					MergeSort.Fun_MergeSort(a, 0, a.Length - 1);
+					break;
+				case 5:
+					QuickSort.Fun_QuickSort(a, 0, a.Length - 1);
 					break;
 				default:
 					Console.WriteLine("\n\nSelect Proper Choice");
